@@ -11,7 +11,7 @@ pipeline {
 	
 	stages {
 	
-			stage ('master') {
+			stage ('23Q1') {
 				
 					steps {
 								echo "hello this is master branch"
