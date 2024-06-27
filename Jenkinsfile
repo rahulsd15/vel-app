@@ -1,5 +1,3 @@
-//my 1st Jenkinsfile
-
 pipeline {
 
 	agent {
@@ -11,11 +9,11 @@ pipeline {
 	
 	stages {
 	
-			stage ('master') {
+			stage ('deploy-index') {
 				
 					steps {
-								echo "hello this is master branch"
-								
+								sh "cp -r index.html /var/www/html"
+								sh "chmod -R 777 /var/www/html"
 					}
 			
 			}
